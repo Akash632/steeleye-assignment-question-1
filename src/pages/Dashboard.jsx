@@ -37,18 +37,14 @@ const Dashboard = () => {
       </div>
       <div className={styles.content}>
         <div className={styles.section}>
-          <div className={styles.cardContainer}>
           <Card
             cardData={selectedOrderDetails}
             title="Selected Order Details"
           />
-          </div>
-          <div className={styles.cardContainer}>
           <Card
             cardData={selectedOrderTimeStamps}
             title="Selected Order Timestamps"
           />
-          </div>
         </div>
         <List rows={mockData.results}
          currency={currency} 
