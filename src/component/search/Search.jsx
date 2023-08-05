@@ -1,5 +1,14 @@
-const Search = ({ searchText, onChange }) => {
-  return <input type="text" value={searchText} onChange={onChange} />
-}
+import './Search.css';
 
-export default Search
+const Search = ({ searchText, onChange, variant = "" }) => {
+  return (
+    <input
+      type="text"
+      value={searchText}
+      onChange={onChange}
+      className={variant}
+    />
+  );
+};
+
+export default Search;
